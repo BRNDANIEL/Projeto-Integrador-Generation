@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { BackEndComponent } from './back-end/back-end.component';
-import { CategoriaComponent } from './categoria/categoria.component';
 import { ContatoComponent } from './contato/contato.component';
 import { CategoriaDeleteComponent } from './delete/categoria-delete/categoria-delete.component';
 import { ProdutoDeleteComponent } from './delete/produto-delete/produto-delete.component';
@@ -18,6 +17,7 @@ import { DetalheProdutoComponent } from './detalhe-produto/detalhe-produto.compo
 import { LoginBackendComponent } from './login-backend/login-backend.component';
 import { PerfilComponent } from './perfil/perfil.component';
 import { PedidoComponent } from './pedido/pedido.component';
+import { PagamentoComponent } from './pagamento/pagamento.component';
 
 
 const routes: Routes = [
@@ -30,7 +30,6 @@ const routes: Routes = [
   {path:'footer', component:FooterComponent},
   {path:'home', component:HomeComponent},
   {path: 'backend', component:BackEndComponent},
-  {path:'categoria', component: CategoriaComponent},
   {path: 'categoria-edit/:id', component:CategoriaEditComponent},
   {path: 'categoria-delete/:id', component:CategoriaDeleteComponent},
   {path: 'produto-edit/:id',component:ProdutoEditComponent},
@@ -38,10 +37,11 @@ const routes: Routes = [
   {path: 'quemsomos', component: QuemSomosComponent},
   {path: 'contato',component:ContatoComponent},
   {path: 'produtos', component: ListagemProdutoComponent},
-  {path: 'produto/:id', component: DetalheProdutoComponent},
+  {path: 'produto/:idProdutoR', component: DetalheProdutoComponent},
   {path: 'login-backend', component: LoginBackendComponent},
   {path: 'perfil', component: PerfilComponent},
-  {path: 'pedido', component: PedidoComponent}
+  {path: 'pedido', component: PedidoComponent},
+  {path: 'pagamento', component: PagamentoComponent}
 
 
 ];

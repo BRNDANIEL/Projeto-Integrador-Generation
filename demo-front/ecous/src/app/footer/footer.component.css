@@ -1,3 +1,7 @@
+textarea{
+    resize: none;
+}
+
 .form-control {
     padding-left: 0;
     transition: all .5s;
@@ -5,4 +9,9 @@
     border-right: none;
     border-left: none;
     background-color: transparent;
+}
+
+.botaozinho{
+    color: #bcac76;
+    opacity: 2;
 }

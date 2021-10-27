@@ -11,7 +11,6 @@ import { HomeComponent } from './home/home.component';
 import { MenuComponent } from './menu/menu.component';
 import { RegisterComponent } from './register/register.component';
 import { BackEndComponent } from './back-end/back-end.component';
-import { CategoriaComponent } from './categoria/categoria.component';
 import { CategoriaDeleteComponent } from './delete/categoria-delete/categoria-delete.component';
 import { ProdutoDeleteComponent } from './delete/produto-delete/produto-delete.component';
 import { CategoriaEditComponent } from './edit/categoria-edit/categoria-edit.component';
@@ -23,6 +22,9 @@ import { DetalheProdutoComponent } from './detalhe-produto/detalhe-produto.compo
 import { LoginBackendComponent } from './login-backend/login-backend.component';
 import { PerfilComponent } from './perfil/perfil.component';
 import { PedidoComponent } from './pedido/pedido.component';
+import { AlertasComponent } from './alertas/alertas.component';
+import { ModalModule } from 'ngx-bootstrap/modal';
+import { PagamentoComponent } from './pagamento/pagamento.component';
 
 
 
@@ -36,7 +38,6 @@ import { PedidoComponent } from './pedido/pedido.component';
     MenuComponent,
     RegisterComponent,
     BackEndComponent,
-    CategoriaComponent,
     CategoriaDeleteComponent,
     ProdutoDeleteComponent,
     CategoriaEditComponent,
@@ -48,13 +49,16 @@ import { PedidoComponent } from './pedido/pedido.component';
     LoginBackendComponent,
     PerfilComponent,
     PedidoComponent,
+    AlertasComponent,
+    PagamentoComponent,
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ModalModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -7,8 +7,16 @@ export class UsuarioLogin{
     public nome: string
     public email: string
     public senha: string
+    public foto: string
     public token: string
-    public pedidos: Pedido;
-    public listaDeDesejos: ListaDeDesejos;
+    public pedidos: Pedido
+    public bairro: string
+    public listaDeDesejos: ListaDeDesejos
+    public cep: string
+    public cidade: string
+    public complemento: string
+    public estado: string
+    public rua: string
+    public numero: number
 
 }
